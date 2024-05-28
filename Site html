@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Простий веб-сайт</title>
+    <style>
+        body {
+            background-image: url('background.jpg'); /* Додайте шлях до вашого фонового зображення */
+            background-size: cover;
+            font-family: 'Arial', sans-serif; /* Змініть шрифт на ваш смак */
+            color: #333; /* Колір тексту */
+            margin: 0;
+            padding: 20px;
+        }
+        form {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        input[type="text"], input[type="submit"] {
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        input[type="submit"] {
+            background-color: #007bff; /* Колір кнопки "Надіслати" */
+            color: #fff;
+            cursor: pointer;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Введіть свої дані:</h1>
+    <form action="processForm" method="post">
+        <label for="inputData">Дані:</label><br>
+        <input type="text" id="inputData" name="inputData"><br><br>
+        <input type="submit" value="Надіслати">
+    </form>
+    
+    <h2>Результат обробки:</h2>
+    <p>Тут буде відображатися результат обробки даних.</p>
+</body>
+</html>
